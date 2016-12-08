@@ -1,3 +1,5 @@
+const ProvidePlugin = require('webpack/lib/ProvidePlugin');
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -22,5 +24,12 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
+  },
+  plugins:[
+    new ProvidePlugin({   
+        jQuery: 'jquery',
+        $: 'jquery',
+        jquery: 'jquery'
+    })
+]
 };

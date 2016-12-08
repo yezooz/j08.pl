@@ -1,32 +1,47 @@
 import React from 'react';
+import { GOALKEEPER, DEFENDER, MIDFIELDER, ATTACKER } from '../position';
 
 const Pitch = (props) => {
+  const { allPlayers, playersOfType } = props;
+
   return (
-    <div class="pitch">
-      <div class="pitch-attack">
-        <div class="pitch-player">
-          9
-        </div>
-        <div class="pitch-player">
-          10
-        </div>
-      </div>
-      <div class="pitch-midfield">
-        <div class="pitch-player">
-          4
+    <div className="pitch">
+      <div className="pitch-line goal-line">
+        <div className="player-middle">
+          <span className="btn" onClick={() => playersOfType(GOALKEEPER)}>
+            G
+          </span>
         </div>
       </div>
-      <div class="pitch-defense">
-        <div class="pitch-player">
-          2
+      <div className="pitch-line defense-line">
+        <div className="player-left">
+          <span className="btn" onClick={() => playersOfType(DEFENDER)}>
+            DL
+          </span>
         </div>
-        <div class="pitch-player">
-          3
+        <div className="player-right" onClick={() => playersOfType(DEFENDER)}>
+          <span className="btn">
+            DR
+          </span>
         </div>
       </div>
-      <div class="pitch-goalkeeper">
-        <div class="pitch-player">
-          1
+      <div className="pitch-line midfield-line">
+        <div className="player-middle" onClick={() => playersOfType(MIDFIELDER)}>
+          <span className="btn">
+            M
+          </span>
+        </div>
+      </div>
+      <div className="pitch-line attack-line">
+        <div className="player-left" onClick={() => playersOfType(ATTACKER)}>
+          <span className="btn">
+            AL
+          </span>
+        </div>
+        <div className="player-right">
+          <span className="btn" onClick={() => playersOfType(ATTACKER)}>
+            AR
+          </span>
         </div>
       </div>
     </div>

@@ -1,27 +1,43 @@
-.search-bar {
-  margin: 20px;
-  text-align: center;
-}
-
-.search-bar input {
-  width: 75%;
-}
-
-.video-item img {
-  max-width: 64px;
-}
-
-.video-detail .details {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
 .list-group-item {
   cursor: pointer;
 }
 
 .list-group-item:hover {
   background-color: #eee;
+}
+
+.pitch {
+
+}
+
+.pitch-line {
+  height: 100px;
+}
+
+.goal-line {
+  text-align: center;
+}
+
+.defense-line {
+  text-align: center;
+}
+
+.midfield-line {
+  text-align: center;
+}
+
+.attack-line {
+  text-align: center;
+}
+
+.player-left {
+  float: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.player-right {
+  float: right;
+  padding-left: 50px;
+  padding-right: 50px;
 }

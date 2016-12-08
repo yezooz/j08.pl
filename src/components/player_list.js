@@ -6,16 +6,16 @@ class PlayerList extends Component {
   renderPlayers(players) {
     return players.map((p) => {
       return (
-        <Player player={p} />
+        <Player key={p.number} player={p} />
       );
     });
   }
 
   render() {
     return (
-      <div>
+      <ul className="list-group">
         {this.renderPlayers(this.props.players)}
-      </div>
+      </ul>
     );
   };
 };

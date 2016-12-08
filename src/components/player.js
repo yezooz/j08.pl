@@ -2,7 +2,7 @@ import React from 'react';
 
 const Player = ({ player }) => {
   return (
-    <p>{player.name} [{player.number}] {player.position}</p>
+    <li className="list-group-item">{player.full_name} [{player.number}]</li>
   );
 };
 

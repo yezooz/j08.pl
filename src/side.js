@@ -1,2 +1,2 @@
 export const LEFT = 'left';
-export const RIGHT = 'left';
+export const RIGHT = 'right';

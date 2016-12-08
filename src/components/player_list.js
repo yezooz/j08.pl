@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Player from './Player';
-import { GOALKEEPER, DEFENDER, MIDFIELDER, ATTACKER } from './player_position';
+import { GOALKEEPER, DEFENDER, MIDFIELDER, ATTACKER } from '../position';
 
 class PlayerList extends Component {
   renderPlayers(players) {

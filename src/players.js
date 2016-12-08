@@ -1,7 +1,7 @@
-import { GOALKEEPER, DEFENDER, MIDFIELDER, ATTACKER } from './player_position';
+import { GOALKEEPER, DEFENDER, MIDFIELDER, ATTACKER } from './position';
 import { LEFT, RIGHT } from './side';
 
-export default const players = [
+export const PLAYERS = [
   {
     number: 15,
     full_name: "Mateusz Bąk",

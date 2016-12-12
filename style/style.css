@@ -7,7 +7,9 @@
 }
 
 .pitch {
-    width: 400px;
+  width: 400px;
+  background: url("half-pitch.png") no-repeat center;
+  background-size: cover;
 }
 
 .pitch-line {
@@ -16,6 +18,7 @@
 
 .goal-line {
   text-align: center;
+  padding-top: 8px;
 }
 
 .defense-line {
@@ -31,12 +34,12 @@
 }
 
 .player {
-    background: url("shirt.png") no-repeat center;
-    height: 32px;
+  background: url("shirt.png") no-repeat center;
+  height: 32px;
 }
 
 .player-center {
-    text-align: center;
+  text-align: center;
 }
 
 .player-left {

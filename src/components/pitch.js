@@ -1,5 +1,6 @@
 import React from "react";
 import {GOALKEEPER, DEFENDER, MIDFIELDER, ATTACKER} from "../position";
+import {LEFT, RIGHT} from "../side";
 
 const Pitch = (props) => {
   const {allPlayers, playersOfType} = props;
@@ -19,16 +20,16 @@ const Pitch = (props) => {
       <div className="pitch-line defense-line">
         <div className="player player-left">
           <span className="btn"
-                onClick={() => playersOfType(DEFENDER)}
-                onMouseEnter={() => playersOfType(DEFENDER)}
+                onClick={() => playersOfType(DEFENDER, LEFT)}
+                onMouseEnter={() => playersOfType(DEFENDER, LEFT)}
                 onMouseOut={() => allPlayers()}>
 
           </span>
         </div>
         <div className="player player-right">
           <span className="btn"
-                onClick={() => playersOfType(DEFENDER)}
-                onMouseEnter={() => playersOfType(DEFENDER)}
+                onClick={() => playersOfType(DEFENDER, RIGHT)}
+                onMouseEnter={() => playersOfType(DEFENDER, RIGHT)}
                 onMouseOut={() => allPlayers()}>
 
           </span>
@@ -46,8 +47,8 @@ const Pitch = (props) => {
       </div>
       <div className="pitch-line attack-line">
         <div className="player player-left"
-             onClick={() => playersOfType(ATTACKER)}
-             onMouseEnter={() => playersOfType(ATTACKER)}
+             onClick={() => playersOfType(ATTACKER, LEFT)}
+             onMouseEnter={() => playersOfType(ATTACKER, LEFT)}
              onMouseOut={() => allPlayers()}>
           <span className="btn">
 
@@ -55,8 +56,8 @@ const Pitch = (props) => {
         </div>
         <div className="player player-right">
           <span className="btn"
-                onClick={() => playersOfType(ATTACKER)}
-                onMouseEnter={() => playersOfType(ATTACKER)}
+                onClick={() => playersOfType(ATTACKER, RIGHT)}
+                onMouseEnter={() => playersOfType(ATTACKER, RIGHT)}
                 onMouseOut={() => allPlayers()}>
           </span>
         </div>

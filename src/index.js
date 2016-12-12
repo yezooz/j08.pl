@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
+import * as _ from "lodash";
 import {PLAYERS} from "./players";
 import PlayerList from "./components/player_list";
 import Pitch from "./components/pitch";
@@ -14,7 +15,7 @@ class App extends Component {
   }
 
   render() {
-    const playerOfType = (position) => this.setState({players: PLAYERS.filter(p => p.position === position)});
+    const playerOfType = (position, side) => this.setState({players: PLAYERS.filter(p => p.position === position && (_.isEmpty(side) || p.side === side))});
     const allPlayers = () => this.setState({players: PLAYERS});
 
     return (

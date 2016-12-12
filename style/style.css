@@ -7,7 +7,7 @@
 }
 
 .pitch {
-
+    width: 400px;
 }
 
 .pitch-line {
@@ -28,6 +28,15 @@
 
 .attack-line {
   text-align: center;
+}
+
+.player {
+    background: url("shirt.png") no-repeat center;
+    height: 32px;
+}
+
+.player-center {
+    text-align: center;
 }
 
 .player-left {

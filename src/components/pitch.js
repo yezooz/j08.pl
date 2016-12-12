@@ -7,40 +7,40 @@ const Pitch = (props) => {
   return (
     <div className="pitch">
       <div className="pitch-line goal-line">
-        <div className="player-middle">
+        <div className="player player-middle">
           <span className="btn" onClick={() => playersOfType(GOALKEEPER)}>
-            G
+
           </span>
         </div>
       </div>
       <div className="pitch-line defense-line">
-        <div className="player-left">
+        <div className="player player-left">
           <span className="btn" onClick={() => playersOfType(DEFENDER)}>
-            DL
+
           </span>
         </div>
-        <div className="player-right" onClick={() => playersOfType(DEFENDER)}>
+        <div className="player player-right" onClick={() => playersOfType(DEFENDER)}>
           <span className="btn">
-            DR
+
           </span>
         </div>
       </div>
       <div className="pitch-line midfield-line">
-        <div className="player-middle" onClick={() => playersOfType(MIDFIELDER)}>
+        <div className="player player-middle" onClick={() => playersOfType(MIDFIELDER)}>
           <span className="btn">
-            M
+
           </span>
         </div>
       </div>
       <div className="pitch-line attack-line">
-        <div className="player-left" onClick={() => playersOfType(ATTACKER)}>
+        <div className="player player-left" onClick={() => playersOfType(ATTACKER)}>
           <span className="btn">
-            AL
+
           </span>
         </div>
-        <div className="player-right">
+        <div className="player player-right">
           <span className="btn" onClick={() => playersOfType(ATTACKER)}>
-            AR
+
           </span>
         </div>
       </div>

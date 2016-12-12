@@ -19,6 +19,9 @@ class App extends Component {
 
     return (
       <span>
+        <div className="col-md-12">
+          <h1>Jaguar Gdańsk <small>2008 Północ</small></h1>
+        </div>
         <div className="col-md-8">
           <Pitch playersOfType={playerOfType}
                  allPlayers={allPlayers}/>

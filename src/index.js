@@ -1,10 +1,8 @@
-import _ from 'lodash';
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { GOALKEEPER, DEFENDER, MIDFIELDER, ATTACKER } from './position';
-import { PLAYERS } from './players';
-import PlayerList from './components/player_list';
-import Pitch from './components/pitch';
+import React, {Component} from "react";
+import ReactDOM from "react-dom";
+import {PLAYERS} from "./players";
+import PlayerList from "./components/player_list";
+import Pitch from "./components/pitch";
 
 class App extends Component {
   constructor(props) {
@@ -16,13 +14,17 @@ class App extends Component {
   }
 
   render() {
+    const playerOfType = (position) => this.setState({players: PLAYERS.filter(p => p.position === position)});
+    const allPlayers = () => this.setState({players: PLAYERS});
+
     return (
       <span>
         <div className="col-md-8">
-          <Pitch playersOfType={position => this.setState({ players: PLAYERS.filter(p => p.position === position)})} allPlayers={() => this.setState({ players: PLAYERS })} />
+          <Pitch playersOfType={playerOfType}
+                 allPlayers={allPlayers}/>
         </div>
         <div className="col-md-4">
-          <PlayerList players={this.state.players} />
+          <PlayerList players={this.state.players}/>
         </div>
       </span>
     );

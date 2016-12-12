@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-import Player from './Player';
-import { GOALKEEPER, DEFENDER, MIDFIELDER, ATTACKER } from '../position';
+import React, {Component} from "react";
+import Player from "./Player";
 
 class PlayerList extends Component {
   renderPlayers(players) {
     return players.map((p) => {
       return (
-        <Player key={p.number} player={p} />
+        <Player key={p.number} player={p}/>
       );
     });
   }

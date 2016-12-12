@@ -1,5 +1,5 @@
-import { GOALKEEPER, DEFENDER, MIDFIELDER, ATTACKER } from './position';
-import { LEFT, RIGHT } from './side';
+import {GOALKEEPER, DEFENDER, MIDFIELDER, ATTACKER} from "./position";
+import {LEFT, RIGHT} from "./side";
 
 export const PLAYERS = [
   {
